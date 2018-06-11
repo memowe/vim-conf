@@ -5,9 +5,9 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 " Decoration
-syntax on                           " Enable syntax highlighting
-set number                          " Show line numbers
-set visualbell                      " Use visual bell
+syntax on               " Enable syntax highlighting
+set number              " Show line numbers
+set visualbell          " Use visual bell
 set ruler               " Show some info at the bottom
 set showcmd             " Show command in the last line of the screen
 
