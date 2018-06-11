@@ -10,6 +10,7 @@ set number              " Show line numbers
 set visualbell          " Use visual bell
 set ruler               " Show some info at the bottom
 set showcmd             " Show command in the last line of the screen
+set linespace=3         " Extra line space
 
 " Um...
 set backspace=indent,eol,start 
