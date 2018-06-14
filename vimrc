@@ -38,3 +38,14 @@ let perl_nofold_packages = 1
 
 " Additional file types
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" File browser (inspired by NERDtree, see https://shapeshed.com/vim-netrw/)
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Vexplore
+"augroup END
