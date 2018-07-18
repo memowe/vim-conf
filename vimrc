@@ -35,6 +35,7 @@ let mapleader = ","
 let perl_fold = 1
 let perl_fold_blocks = 1
 let perl_nofold_packages = 1
+let perl_sub_signatures = 1
 
 " Additional file types
 au BufRead,BufNewFile *.md set filetype=markdown
