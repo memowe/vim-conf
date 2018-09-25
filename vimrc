@@ -1,5 +1,8 @@
 set nocompatible                    " Don't use vi compatibility mode
 
+" Enable mouse
+set mouse=a
+
 " Package manager
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
