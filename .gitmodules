@@ -1,9 +1,9 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
-	url = https://github.com/wincent/command-t.git
+	url = https://github.com/wincent/command-t
 [submodule "bundle/vim-pathogen"]
 	path = bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
 [submodule "bundle/vim-perl"]
 	path = bundle/vim-perl
-	url = git@github.com:vim-perl/vim-perl.git
+	url = https://github.com/vim-perl/vim-perl
