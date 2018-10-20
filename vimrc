@@ -1,6 +1,7 @@
 set nocompatible                    " Don't use vi compatibility mode
 
 " Enable mouse
+set ttymouse=xterm2
 set mouse=a
 
 " Package manager
