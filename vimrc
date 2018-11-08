@@ -10,6 +10,7 @@ execute pathogen#infect()
 
 " Decoration
 syntax on               " Enable syntax highlighting
+set background=dark     " True most of the time for my environment
 set number              " Show line numbers
 set visualbell          " Use visual bell
 set ruler               " Show some info at the bottom
