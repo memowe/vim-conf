@@ -10,7 +10,7 @@ $ git clone --recurse-submodules https://github.com/memowe/vim-conf.git .vim
 
 ```bash
 $ cd $HOME/.vim/bundle/command-t/ruby/command-t/ext/command-t
-$ ruby extconf.rb && \
+$ ruby extconf.rb
 $ make
 ```
 
