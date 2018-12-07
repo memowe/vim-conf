@@ -10,3 +10,6 @@
 [submodule "bundle/vim-docker"]
 	path = bundle/vim-docker
 	url = https://github.com/infoslack/vim-docker.git
+[submodule "bundle/vim-tmux-focus-events"]
+	path = bundle/vim-tmux-focus-events
+	url = https://github.com/tmux-plugins/vim-tmux-focus-events.git
