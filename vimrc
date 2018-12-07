@@ -55,3 +55,6 @@ let g:netrw_winsize = 25
 "  autocmd!
 "  autocmd VimEnter * :Vexplore
 "augroup END
+
+" Offer file content reload after it was changed on the disk
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * checktime
