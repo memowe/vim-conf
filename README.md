@@ -9,9 +9,7 @@ $ git clone --recurse-submodules https://github.com/memowe/vim-conf.git .vim
 ## After installation
 
 ```bash
-$ cd $HOME/.vim/bundle/command-t/ruby/command-t/ext/command-t
-$ ruby extconf.rb
 $ make
 ```
 
-**DON'T** `make cleanup`!
+to compile Command-T. **DON'T** `make cleanup`!
