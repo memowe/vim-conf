@@ -42,6 +42,9 @@ let perl_fold_blocks = 1
 let perl_nofold_packages = 1
 let perl_sub_signatures = 1
 
+" NPM
+set wildignore+=*/node_modules
+
 " Additional file types
 au BufRead,BufNewFile *.md set filetype=markdown
 
