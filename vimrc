@@ -1,4 +1,4 @@
-set nocompatible                    " Don't use vi compatibility mode
+set nocompatible " Don't use vi compatibility mode
 
 " Enable mouse
 set ttymouse=xterm2
@@ -50,3 +50,10 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " Offer file content reload after it was changed on the disk
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * checktime
+
+" Tweak the file browser (most use cases: :Vexplore)
+let g:netrw_banner = 0          " No banner (I to toggle)
+let g:netrw_liststyle = 3       " Tree view as default (i to switch)
+let g:netrw_browse_split = 4    " Open in new horizontal split by default
+let g:netrw_altv = 1            "  
+let g:netrw_winsize = 25        " Column width
