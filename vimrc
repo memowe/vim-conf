@@ -1,5 +1,17 @@
 set nocompatible        " Don't use vi compatibility mode
 
+" ---[ Vundle extension manager ]---
+
+filetype off
+set runtimepath+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Plugins here
+
+" ---[ End of Vundle ]---
+call vundle#end()
+filetype plugin indent on
+
 " Enable mouse
 set ttymouse=xterm2
 set mouse=a
@@ -22,11 +34,6 @@ set autoindent          " Copy indentation for a new line
 
 " Writing
 set showmatch           " Shortly show matching brackets etc.
-
-" File type detection
-filetype on
-filetype plugin on
-filetype indent on
 
 let mapleader = ","     " Set leader key to , - default is \
 
