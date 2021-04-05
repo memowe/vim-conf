@@ -1,5 +1,9 @@
+# Vim swap files
+*~
 *.sw?
-.netrwhist
 
-bundle/*
-!bundle/Vundle.vim
+# vim-plug (installs itself)
+autoload/plug.vim
+
+# Plugins installed by vim-plug
+plugged
