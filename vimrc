@@ -2,25 +2,40 @@ set nocompatible        " Don't use vi compatibility mode
 
 " ---[ Plugin manager ]---
 
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+endif
+
+" Install missing plugins on startup
+
+call plug#begin('~/.vim/plugged')
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+" ---[ Plugins ]---
+
 " lean & mean status/tabline for vim that's light as air
-"'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'
 
 " Fuzzy finder
-"'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Mojolicious embedded template syntax (.ep etc.)
-"'yko/mojo.vim'
+Plug 'yko/mojo.vim'
 
 " Make vim and tmux work better together
-"'tmux-plugins/vim-tmux-focus-events'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 " Syntax Highlight for Vue.js components
-"'posva/vim-vue'
+Plug 'posva/vim-vue'
 
 " Support for Perl 5
-"'vim-perl/vim-perl'
+Plug 'vim-perl/vim-perl'
 
 " ---[ End of Plugins ]---
+call plug#end()
 
 " Enable mouse
 set ttymouse=xterm2
