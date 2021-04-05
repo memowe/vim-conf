@@ -8,6 +8,9 @@ call vundle#begin()
 
 " Plugins here
 
+" lean & mean status/tabline for vim that's light as air
+Plugin 'vim-airline/vim-airline'
+
 " Mojolicious embedded template syntax (.ep etc.)
 Plugin 'yko/mojo.vim'
 
