@@ -32,6 +32,7 @@ set ttymouse=xterm2
 set mouse=a
 
 " Decoration
+colorscheme morning     " Light stuff, works on background=dark and light
 syntax on               " Enable syntax highlighting
 set number              " Show line numbers
 set visualbell          " Use visual bell
