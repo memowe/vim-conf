@@ -1,34 +1,26 @@
 set nocompatible        " Don't use vi compatibility mode
 
-" ---[ Vundle extension manager ]---
-
-filetype off
-set runtimepath+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" Plugins here
+" ---[ Plugin manager ]---
 
 " lean & mean status/tabline for vim that's light as air
-Plugin 'vim-airline/vim-airline'
+"'vim-airline/vim-airline'
 
 " Fuzzy finder
-Plugin 'ctrlpvim/ctrlp.vim'
+"'ctrlpvim/ctrlp.vim'
 
 " Mojolicious embedded template syntax (.ep etc.)
-Plugin 'yko/mojo.vim'
+"'yko/mojo.vim'
 
 " Make vim and tmux work better together
-Plugin 'tmux-plugins/vim-tmux-focus-events'
+"'tmux-plugins/vim-tmux-focus-events'
 
 " Syntax Highlight for Vue.js components
-Plugin 'posva/vim-vue'
+"'posva/vim-vue'
 
 " Support for Perl 5
-Plugin 'vim-perl/vim-perl'
+"'vim-perl/vim-perl'
 
-" ---[ End of Vundle ]---
-call vundle#end()
-filetype plugin indent on
+" ---[ End of Plugins ]---
 
 " Enable mouse
 set ttymouse=xterm2
@@ -44,6 +36,9 @@ set showcmd             " Show command in the last line of the screen
 
 " Make backspace behave like almost everywhere else
 set backspace=indent,eol,start 
+
+" Filetype plugin and indentation detection
+filetype plugin indent on
 
 " Indention
 set tabstop=4           " 4 Spaces for a tab
