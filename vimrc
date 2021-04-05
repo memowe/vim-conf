@@ -1,23 +1,41 @@
-set nocompatible " Don't use vi compatibility mode
+set nocompatible        " Don't use vi compatibility mode
+
+" ---[ Vundle extension manager ]---
+
+filetype off
+set runtimepath+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Plugins here
+
+" Mojolicious embedded template syntax (.ep etc.)
+Plugin 'yko/mojo.vim'
+
+" Make vim and tmux work better together
+Plugin 'tmux-plugins/vim-tmux-focus-events'
+
+" Syntax Highlight for Vue.js components
+Plugin 'posva/vim-vue'
+
+" Support for Perl 5
+Plugin 'vim-perl/vim-perl'
+
+" ---[ End of Vundle ]---
+call vundle#end()
+filetype plugin indent on
 
 " Enable mouse
 set ttymouse=xterm2
 set mouse=a
 
-" Package manager
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
 " Decoration
 syntax on               " Enable syntax highlighting
-set background=dark     " True most of the time for my environment
 set number              " Show line numbers
 set visualbell          " Use visual bell
 set ruler               " Show some info at the bottom
 set showcmd             " Show command in the last line of the screen
-set linespace=1         " Extra line space
 
-" Um...
+" Make backspace behave like almost everywhere else
 set backspace=indent,eol,start 
 
 " Indention
@@ -29,31 +47,7 @@ set autoindent          " Copy indentation for a new line
 " Writing
 set showmatch           " Shortly show matching brackets etc.
 
-" File type detection
-filetype on
-filetype plugin on
-filetype indent on
-
-let mapleader = ","
-
-" Perl
-let perl_fold = 1
-let perl_fold_blocks = 1
-let perl_nofold_packages = 1
-let perl_sub_signatures = 1
-
-" NPM
-set wildignore+=*/node_modules
-
-" Additional file types
-au BufRead,BufNewFile *.md set filetype=markdown
+let mapleader = ","     " Set leader key to , - default is \
 
 " Offer file content reload after it was changed on the disk
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * checktime
-
-" Tweak the file browser (most use cases: :Vexplore)
-let g:netrw_banner = 0          " No banner (I to toggle)
-let g:netrw_liststyle = 3       " Tree view as default (i to switch)
-let g:netrw_browse_split = 4    " Open in new horizontal split by default
-let g:netrw_altv = 1            "  
-let g:netrw_winsize = 25        " Column width
