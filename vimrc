@@ -11,6 +11,9 @@ call vundle#begin()
 " lean & mean status/tabline for vim that's light as air
 Plugin 'vim-airline/vim-airline'
 
+" Fuzzy finder
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " Mojolicious embedded template syntax (.ep etc.)
 Plugin 'yko/mojo.vim'
 
