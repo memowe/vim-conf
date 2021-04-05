@@ -8,6 +8,18 @@ call vundle#begin()
 
 " Plugins here
 
+" Mojolicious embedded template syntax (.ep etc.)
+Plugin 'yko/mojo.vim'
+
+" Make vim and tmux work better together
+Plugin 'tmux-plugins/vim-tmux-focus-events'
+
+" Syntax Highlight for Vue.js components
+Plugin 'posva/vim-vue'
+
+" Support for Perl 5
+Plugin 'vim-perl/vim-perl'
+
 " ---[ End of Vundle ]---
 call vundle#end()
 filetype plugin indent on
