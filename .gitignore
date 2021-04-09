@@ -7,3 +7,6 @@ autoload/plug.vim
 
 # Plugins installed by vim-plug
 plugged
+
+# netrw (file browser) history
+.netrwhist
