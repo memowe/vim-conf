@@ -79,3 +79,9 @@ let g:netrw_liststyle = 3       " Tree view as default (i to switch)
 let g:netrw_browse_split = 4    " Open in new horizontal split by default
 let g:netrw_altv = 1            "
 let g:netrw_winsize = 25        " Column width
+
+
+" ---[ Type specific configuration ]---
+
+" Haskell
+autocmd FileType haskell setlocal shiftwidth=2 tabstop=2
