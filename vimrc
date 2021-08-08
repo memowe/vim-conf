@@ -66,9 +66,11 @@ set showmatch           " Shortly show matching brackets etc.
 
 let mapleader = ","     " Set leader key to , - default is \
 
-" Avoid esc: in input mode, use jk or kj fast
+" Avoid esc: in visual/input mode, use jk or kj fast
 inoremap jk <Esc>
 inoremap kj <Esc>
+vnoremap jk <Esc>
+vnoremap kj <Esc>
 
 " Offer file content reload after it was changed on the disk
 autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * checktime
