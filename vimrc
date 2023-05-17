@@ -38,9 +38,6 @@ Plug 'vim-perl/vim-perl'
 call plug#end()
 
 " Enable mouse
-if !has('nvim')
-    set ttymouse=xterm2
-endif
 set mouse=a
 
 " Decoration
