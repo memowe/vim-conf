@@ -55,8 +55,8 @@ set backspace=indent,eol,start
 filetype plugin indent on
 
 " Indention
-set tabstop=4           " 4 Spaces for a tab
-set shiftwidth=4        " Spaces to use with reindent/autoindent
+set tabstop=2           " 2 Spaces for a tab
+set shiftwidth=2        " Spaces to use with reindent/autoindent
 set expandtab           " Insert spaces by hitting tab
 set autoindent          " Copy indentation for a new line
 
